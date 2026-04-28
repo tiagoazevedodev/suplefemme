@@ -1,6 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { legal } from "@/lib/content";
-import { SITE } from "@/lib/config";
+import { SITE, WHATSAPP_NUMBER } from "@/lib/config";
+import { formatPhoneNumber } from "@/lib/format";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -21,45 +22,20 @@ export function Footer() {
               <p className="font-display text-xs font-semibold uppercase tracking-widest2 text-white">
                 Aviso legal
               </p>
-              <p className="mt-3 font-body text-sm leading-relaxed text-white/85">
+              <p className="mt-3 font-body text-xs leading-relaxed text-white/75">
                 {legal.notice}
               </p>
             </div>
           </div>
 
-          <div className="space-y-8">
+          <div className="flex flex-col items-center justify-center">
             <div>
               <p className="font-display text-xs font-semibold uppercase tracking-widest2 text-white/70">
                 Contato
               </p>
               <ul className="mt-3 space-y-1.5 font-body text-sm text-white/85">
-                {/* TODO (cliente): preencher dados reais */}
-                <li>CNPJ: —</li>
-                <li>contato@suplefemme.com.br</li>
-                <li>WhatsApp: a definir</li>
-              </ul>
-            </div>
-            <div>
-              <p className="font-display text-xs font-semibold uppercase tracking-widest2 text-white/70">
-                Institucional
-              </p>
-              <ul className="mt-3 space-y-1.5 font-body text-sm">
-                <li>
-                  <a
-                    href="#"
-                    className="text-white/85 underline-offset-4 hover:text-white hover:underline"
-                  >
-                    Política de Privacidade
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-white/85 underline-offset-4 hover:text-white hover:underline"
-                  >
-                    Termos de Uso
-                  </a>
-                </li>
+                <li>CNPJ: 05.230.012/0002-07</li>
+                <li>WhatsApp: {formatPhoneNumber(WHATSAPP_NUMBER)}</li>
               </ul>
             </div>
           </div>
