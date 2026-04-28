@@ -34,7 +34,7 @@ export function FinalCTA() {
               </ButtonLink>
               <div className="flex items-center gap-2 font-body text-sm text-white/80">
                 <ShieldCheck size={16} aria-hidden="true" />
-                Garantia de fábrica de 5 meses
+                Garantia de fábrica de 12 meses
               </div>
             </div>
           </div>

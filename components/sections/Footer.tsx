@@ -34,8 +34,9 @@ export function Footer() {
                 Contato
               </p>
               <ul className="mt-3 space-y-1.5 font-body text-sm text-white/85">
-                <li>CNPJ: 05.230.012/0002-07</li>
+                <li>CNPJ: 05.230.012/0002-07 - Dose Indicada</li>
                 <li>WhatsApp: {formatPhoneNumber(WHATSAPP_NUMBER)}</li>
+                <li>Endereço: Rua Barão de Cotegipe, 442 - Centro, Rio Grande - RS, 96200-290</li>
               </ul>
             </div>
           </div>

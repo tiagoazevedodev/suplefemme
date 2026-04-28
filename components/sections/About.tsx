@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FlaskConical, Leaf, Sprout, WheatOff, MilkOff } from "lucide-react";
+import { Leaf, Sprout, WheatOff, MilkOff } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Badge } from "@/components/ui/Badge";
@@ -68,22 +68,6 @@ export function About() {
               </div>
             </FadeIn>
 
-            <FadeIn delay={0.3}>
-              <div className="mt-8 flex items-center gap-4 rounded-2xl border border-brand-red/15 bg-white p-5">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-red/10 text-brand-red-deep">
-                  <FlaskConical size={22} strokeWidth={1.7} aria-hidden="true" />
-                </div>
-                <div>
-                  <p className="font-display text-xs font-semibold uppercase tracking-widest2 text-brand-red">
-                    Origem
-                  </p>
-                  <p className="mt-0.5 font-body text-sm leading-snug text-brand-graphite md:text-base">
-                    Manipulado em farmácia, com ativos selecionados e dosagem
-                    controlada.
-                  </p>
-                </div>
-              </div>
-            </FadeIn>
           </div>
 
           {/* Coluna visual */}

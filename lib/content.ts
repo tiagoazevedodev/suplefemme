@@ -32,7 +32,7 @@ export const about = {
   title: "Energia que vem de dentro",
   paragraphs: [
     "SUPLEFEMME é um suplemento dietético natural, formulado com Feno Grego, Maca Peruana e Long Jack — três ativos tradicionalmente associados ao equilíbrio hormonal, à disposição e ao bem-estar da mulher adulta.",
-    "Nasceu em uma farmácia de manipulação, com cuidado no que entra na cápsula e respeito por quem vai tomar. Não é medicamento. É um apoio diário para mulheres que querem se sentir mais inteiras, presentes e conectadas com a própria essência.",
+    "Formulado com cuidado no que entra na cápsula e respeito por quem vai tomar. Não é medicamento. É um apoio diário para mulheres que querem se sentir mais inteiras, presentes e conectadas com a própria essência.",
   ],
 } as const;
 
@@ -144,7 +144,7 @@ export const faqs = [
   },
   {
     q: "Qual a validade do produto?",
-    a: "A garantia de fábrica é de 5 meses. Conserve em local seco e arejado, ao abrigo da luz.",
+    a: "A garantia de fábrica é de 12 meses. Conserve em local seco e arejado, ao abrigo da luz.",
   },
 ] as const;
 
@@ -152,12 +152,12 @@ export const finalCta = {
   eyebrow: "Sua vez",
   title: "Reacenda o que é seu",
   description:
-    "Garantia de fábrica de 5 meses. Atendimento humano para tirar suas dúvidas antes da compra.",
+    "Garantia de fábrica de 12 meses. Atendimento humano para tirar suas dúvidas antes da compra.",
   cta: "Falar no WhatsApp",
 } as const;
 
 export const legal = {
   // Texto literal do brief seção 6 — não parafrasear (regulatório).
   notice:
-    "Este produto é um suplemento dietético, não um medicamento. Suplementa dietas insuficientes. Não trata, cura nem previne doenças. Idade mínima recomendada: 18 anos. Consumir junto com alimentos para facilitar a assimilação. Consulte seu médico e/ou farmacêutico antes de iniciar o uso. Mulheres gestantes, lactantes ou em uso de medicação contínua devem consultar profissional de saúde antes do consumo. Garantia de fábrica: 5 meses.",
+    "Este produto é um suplemento dietético, não um medicamento. Suplementa dietas insuficientes. Não trata, cura nem previne doenças. Idade mínima recomendada: 18 anos. Consumir junto com alimentos para facilitar a assimilação. Consulte seu médico e/ou farmacêutico antes de iniciar o uso. Mulheres gestantes, lactantes ou em uso de medicação contínua devem consultar profissional de saúde antes do consumo. Garantia de fábrica: 12 meses.",
 } as const;

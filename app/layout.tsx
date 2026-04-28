@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: `%s · ${SITE.name}`,
   },
   description:
-    "Suplemento natural feminino com Feno Grego, Maca Peruana e Long Jack. Apoio à libido, energia, equilíbrio hormonal e bem-estar — formulado por farmácia de manipulação.",
+    "Suplemento natural feminino com Feno Grego, Maca Peruana e Long Jack. Apoio à libido, energia, equilíbrio hormonal e bem-estar.",
   keywords: [
     "suplemento libido feminina",
     "suplemento natural feminino",

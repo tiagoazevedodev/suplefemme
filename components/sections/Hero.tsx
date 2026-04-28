@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, Leaf, Sprout, FlaskConical } from "lucide-react";
+import { ArrowRight, Leaf, Sprout } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/Button";
 import { FloralPattern } from "@/components/ui/FloralPattern";
@@ -59,12 +59,7 @@ export function Hero() {
                 Vegano
               </li>
               <li aria-hidden="true" className="h-3 w-px bg-white/25" />
-              <li className="flex items-center gap-1.5">
-                <FlaskConical size={13} strokeWidth={1.8} aria-hidden="true" />
-                Manipulado em farmácia
-              </li>
-              <li aria-hidden="true" className="h-3 w-px bg-white/25" />
-              <li>5 meses de garantia</li>
+              <li>12 meses de garantia</li>
             </ul>
           </div>
 
