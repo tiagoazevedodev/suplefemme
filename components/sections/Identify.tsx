@@ -49,7 +49,7 @@ export function Identify() {
 
           <FadeIn delay={0.35}>
             <div className="mt-10 flex justify-center">
-              <ButtonLink href="#beneficios" variant="outlineDark">
+              <ButtonLink href="#sobre" variant="outlineDark">
                 {identify.cta}
                 <ArrowRight size={16} strokeWidth={2.5} />
               </ButtonLink>

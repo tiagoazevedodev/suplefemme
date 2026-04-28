@@ -24,7 +24,7 @@ const badges = [
 
 export function About() {
   return (
-    <section className="relative isolate overflow-hidden bg-brand-cream py-24 md:py-32">
+    <section id="sobre" className="relative isolate overflow-hidden scroll-mt-20 bg-brand-cream py-24 md:py-32">
       <FloralPattern
         opacity={0.05}
         colorClassName="text-brand-red-deep"
