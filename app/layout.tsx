@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat, Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { SITE } from "@/lib/config";
 import { ingredients } from "@/lib/content";
 import "./globals.css";
@@ -72,6 +73,7 @@ export default function RootLayout({
     <html lang="pt-BR" className={`${display.variable} ${body.variable}`}>
       <body>
         {children}
+        <Analytics />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(productLd) }}
