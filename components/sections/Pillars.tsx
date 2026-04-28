@@ -9,7 +9,7 @@ const icons = [Sparkles, Flame, Brain];
 
 export function Pillars() {
   return (
-    <section className="relative isolate overflow-hidden bg-brand-gradient py-24 text-white md:py-32">
+    <section id="beneficios" className="relative isolate overflow-hidden scroll-mt-20 bg-brand-gradient py-24 text-white md:py-32">
       <FloralPattern opacity={0.14} />
       <Container className="relative z-10">
         <FadeIn>
@@ -27,7 +27,7 @@ export function Pillars() {
             const Icon = icons[i];
             return (
               <FadeIn key={pillar.title} delay={0.08 * i}>
-                <article className="group h-full rounded-3xl border border-white/15 bg-white/5 p-8 backdrop-blur-sm transition hover:border-white/30 hover:bg-white/10">
+                <article className="group h-full rounded-3xl border border-white/15 bg-white/5 p-8 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-white/30 hover:bg-white/10 hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.5)]">
                   <Icon
                     size={28}
                     strokeWidth={1.6}

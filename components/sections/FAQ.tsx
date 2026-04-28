@@ -9,7 +9,7 @@ import { faqs } from "@/lib/content";
 
 export function FAQ() {
   return (
-    <section className="bg-white py-24 md:py-32">
+    <section id="faq" className="scroll-mt-20 bg-white py-24 md:py-32">
       <Container>
         <FadeIn>
           <SectionHeading

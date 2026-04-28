@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FadeIn } from "@/components/motion/FadeIn";
@@ -6,38 +5,25 @@ import { ingredients } from "@/lib/content";
 
 export function Ingredients() {
   return (
-    <section className="bg-brand-cream py-24 md:py-32">
+    <section className="bg-brand-cream py-20 md:py-24">
       <Container>
-        <div className="grid items-center gap-10 md:grid-cols-[1.4fr_1fr]">
-          <FadeIn>
-            <SectionHeading
-              eyebrow="Ingredientes naturais"
-              title="Três fitoterápicos com tradição"
-              description="Plantas usadas há séculos em diferentes culturas, reunidas em uma cápsula de 600mg."
-              align="left"
-              tone="dark"
-            />
-          </FadeIn>
-          <FadeIn delay={0.1}>
-            <div className="hidden md:block">
-              <Image
-                src="/product/flask-open.png"
-                alt="Pote de SUPLEFEMME aberto, exibindo as cápsulas"
-                width={520}
-                height={520}
-                className="ml-auto h-auto w-full max-w-sm"
-              />
-            </div>
-          </FadeIn>
-        </div>
+        <FadeIn>
+          <SectionHeading
+            eyebrow="Ingredientes naturais"
+            title="Três fitoterápicos com tradição"
+            description="Plantas usadas há séculos em diferentes culturas, reunidas em uma cápsula de 600mg."
+            align="left"
+            tone="dark"
+          />
+        </FadeIn>
 
         <div
           id="ingredientes"
-          className="mt-12 grid scroll-mt-20 gap-5 md:mt-16 md:grid-cols-3 md:gap-6"
+          className="mt-12 grid scroll-mt-20 gap-5 md:mt-14 md:grid-cols-3 md:gap-6"
         >
           {ingredients.map((ing, i) => (
             <FadeIn key={ing.name} delay={0.08 * i}>
-              <article className="group flex h-full flex-col rounded-3xl border border-brand-graphite/10 bg-white p-8 transition hover:border-brand-red/40 hover:shadow-xl">
+              <article className="group flex h-full flex-col rounded-3xl border border-brand-graphite/10 bg-white p-8 transition duration-300 hover:-translate-y-1 hover:border-brand-red/40 hover:shadow-[0_24px_48px_-24px_rgba(107,10,23,0.35)]">
                 <div className="flex items-baseline justify-between">
                   <span className="font-display text-xs font-semibold uppercase tracking-widest2 text-brand-red">
                     {ing.dose}

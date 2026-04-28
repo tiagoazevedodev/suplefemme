@@ -17,6 +17,16 @@ export const hero = {
   ctaSecondary: "Ver ingredientes",
 } as const;
 
+export const identify = {
+  eyebrow: "Pausa · Para você",
+  title: "Algumas semanas pesam mais que outras.",
+  paragraphs: [
+    "Cansaço sem motivo aparente, libido em baixa, dias em que a sua energia simplesmente não chega para você.",
+    "Você não precisa aceitar isso como destino. Escolher se cuidar — com o que a natureza oferece — também é um ato de amor próprio.",
+  ],
+  cta: "Conhecer SUPLEFEMME",
+} as const;
+
 export const about = {
   eyebrow: "O que é o SUPLEFEMME",
   title: "Energia que vem de dentro",

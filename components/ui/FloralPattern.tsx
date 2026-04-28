@@ -100,10 +100,12 @@ function Stem({ d }: { d: string }) {
 
 export function FloralPattern({
   className,
+  colorClassName = "text-brand-red-deep",
   opacity = 0.22,
   parallax = true,
 }: {
   className?: string;
+  colorClassName?: string;
   opacity?: number;
   parallax?: boolean;
 }) {
@@ -130,7 +132,7 @@ export function FloralPattern({
           width="100%"
           height="110%"
           preserveAspectRatio="xMidYMid slice"
-          className="text-brand-red-deep"
+          className={colorClassName}
           style={{ opacity }}
         >
           <g fill="currentColor" stroke="none">

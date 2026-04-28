@@ -6,7 +6,7 @@ import { howToUse } from "@/lib/content";
 
 export function HowToUse() {
   return (
-    <section className="relative isolate overflow-hidden bg-brand-red-deep py-24 text-white md:py-32">
+    <section id="como-usar" className="relative isolate overflow-hidden scroll-mt-20 bg-brand-red-deep py-24 text-white md:py-32">
       <FloralPattern opacity={0.12} />
       <Container className="relative z-10">
         <FadeIn>

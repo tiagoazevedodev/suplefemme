@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Leaf, Sprout, FlaskConical } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/Button";
 import { FloralPattern } from "@/components/ui/FloralPattern";
@@ -8,7 +8,7 @@ import { whatsappUrl, SITE } from "@/lib/config";
 
 export function Hero() {
   return (
-    <section className="relative isolate overflow-hidden bg-brand-gradient text-white">
+    <section id="top" className="relative isolate overflow-hidden bg-brand-gradient text-white">
       <FloralPattern opacity={0.18} />
 
       <Container className="relative z-10 pb-20 pt-12 md:pb-32 md:pt-16">
@@ -17,12 +17,9 @@ export function Hero() {
           <p className="font-display text-2xl font-black tracking-tightish md:text-3xl">
             {SITE.name}
           </p>
-          <a
-            href="#ingredientes"
-            className="hidden font-display text-xs font-semibold uppercase tracking-widest2 text-white/80 transition hover:text-white md:block"
-          >
-            Ingredientes
-          </a>
+          <p className="hidden font-display text-[11px] font-semibold uppercase tracking-widest2 text-white/70 md:block">
+            Suplemento dietético natural
+          </p>
         </div>
 
         <div className="mt-16 grid items-center gap-12 md:mt-24 md:grid-cols-[1.1fr_1fr] md:gap-16">
@@ -50,6 +47,25 @@ export function Hero() {
                 {hero.ctaSecondary}
               </ButtonLink>
             </div>
+
+            <ul className="mt-8 hidden flex-wrap items-center gap-x-5 gap-y-2 font-display text-[10px] font-semibold uppercase tracking-widest2 text-white/70 md:flex">
+              <li className="flex items-center gap-1.5">
+                <Leaf size={13} strokeWidth={1.8} aria-hidden="true" />
+                Natural
+              </li>
+              <li aria-hidden="true" className="h-3 w-px bg-white/25" />
+              <li className="flex items-center gap-1.5">
+                <Sprout size={13} strokeWidth={1.8} aria-hidden="true" />
+                Vegano
+              </li>
+              <li aria-hidden="true" className="h-3 w-px bg-white/25" />
+              <li className="flex items-center gap-1.5">
+                <FlaskConical size={13} strokeWidth={1.8} aria-hidden="true" />
+                Manipulado em farmácia
+              </li>
+              <li aria-hidden="true" className="h-3 w-px bg-white/25" />
+              <li>5 meses de garantia</li>
+            </ul>
           </div>
 
           <div className="relative mx-auto w-full max-w-md md:max-w-none">
