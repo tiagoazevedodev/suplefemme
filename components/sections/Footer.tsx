@@ -1,6 +1,7 @@
+import { Building2, Facebook, Instagram, MapPin, MessageCircle } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { legal } from "@/lib/content";
-import { SITE, WHATSAPP_NUMBER } from "@/lib/config";
+import { SITE, WHATSAPP_NUMBER, whatsappUrl } from "@/lib/config";
 import { formatPhoneNumber } from "@/lib/format";
 
 export function Footer() {
@@ -33,10 +34,33 @@ export function Footer() {
               <p className="font-display text-xs font-semibold uppercase tracking-widest2 text-white/70">
                 Contato
               </p>
-              <ul className="mt-3 space-y-1.5 font-body text-sm text-white/85">
-                <li>CNPJ: 05.230.012/0002-07 - Dose Indicada</li>
-                <li>WhatsApp: {formatPhoneNumber(WHATSAPP_NUMBER)}</li>
-                <li>Endereço: Rua Barão de Cotegipe, 442 - Centro, Rio Grande - RS, 96200-290</li>
+              <ul className="mt-3 space-y-3 font-body text-sm text-white/85">
+                <li className="flex items-start gap-2.5">
+                  <Building2 size={15} strokeWidth={1.7} className="mt-0.5 shrink-0 text-white/50" aria-hidden="true" />
+                  <span>05.230.012/0002-07 — Dose Indicada</span>
+                </li>
+                <li className="flex items-start gap-2.5">
+                  <MessageCircle size={15} strokeWidth={1.7} className="mt-0.5 shrink-0 text-white/50" aria-hidden="true" />
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                    {formatPhoneNumber(WHATSAPP_NUMBER)}
+                  </a>
+                </li>
+                <li className="flex items-start gap-2.5">
+                  <MapPin size={15} strokeWidth={1.7} className="mt-0.5 shrink-0 text-white/50" aria-hidden="true" />
+                  <span>Rua Barão de Cotegipe, 442 — Centro, Rio Grande - RS, 96200-290</span>
+                </li>
+                <li className="flex items-start gap-2.5">
+                  <Instagram size={15} strokeWidth={1.7} className="mt-0.5 shrink-0 text-white/50" aria-hidden="true" />
+                  <a href="https://www.instagram.com/suplefemme_oficial" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                    @suplefemme_oficial
+                  </a>
+                </li>
+                <li className="flex items-start gap-2.5">
+                  <Facebook size={15} strokeWidth={1.7} className="mt-0.5 shrink-0 text-white/50" aria-hidden="true" />
+                  <a href="https://www.facebook.com/profile.php?id=61584095726578&sk=mentions" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                    SUPLEFEMME
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

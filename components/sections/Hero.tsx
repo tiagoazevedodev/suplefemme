@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, Leaf, Sprout } from "lucide-react";
+import { ArrowRight, Leaf, Sprout, FlaskConical } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/Button";
 import { FloralPattern } from "@/components/ui/FloralPattern";
